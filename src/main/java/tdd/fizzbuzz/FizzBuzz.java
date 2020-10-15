@@ -12,19 +12,23 @@ public class FizzBuzz {
 
     public String countOff(int orderNumber) {
 
-        if (orderNumber % MODULO_3 == 0 && orderNumber % MODULO_5 == 0) {
+        boolean multipleOfThree = orderNumber % MODULO_3 == 0;
+        boolean multipleOfFive = orderNumber % MODULO_5 == 0;
+        boolean multipleOfSeven = orderNumber % MODULO_7 == 0;
+
+        if (multipleOfThree && multipleOfFive) {
             return FIZZ_BUZZ;
         }
 
-        if (orderNumber % MODULO_3 == 0 && orderNumber % MODULO_7 == 0) {
+        if (multipleOfThree && multipleOfSeven) {
             return FIZZ_WHIZZ;
         }
 
-        if (orderNumber % MODULO_3 == 0) {
+        if (multipleOfThree) {
             return FIZZ;
         }
 
-        if (orderNumber % MODULO_5 == 0) {
+        if (multipleOfFive) {
             return BUZZ;
         }
         return String.valueOf(orderNumber);
