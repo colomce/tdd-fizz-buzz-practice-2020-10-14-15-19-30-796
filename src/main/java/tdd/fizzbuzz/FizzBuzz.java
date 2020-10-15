@@ -16,6 +16,10 @@ public class FizzBuzz {
         boolean multipleOfFive = orderNumber % MODULO_5 == 0;
         boolean multipleOfSeven = orderNumber % MODULO_7 == 0;
 
+        if (multipleOfThree && multipleOfFive && multipleOfSeven) {
+            return "FizzBuzzWhizz";
+        }
+
         if (multipleOfThree && multipleOfFive) {
             return FIZZ_BUZZ;
         }
