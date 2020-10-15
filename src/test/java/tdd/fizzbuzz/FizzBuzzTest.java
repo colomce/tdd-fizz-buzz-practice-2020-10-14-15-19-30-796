@@ -57,5 +57,18 @@ public class FizzBuzzTest {
         //Then
         assertEquals("FizzBuzz", actual);
     }
+
+    @Test
+    void should_return_FizzWhizz_when_countOff_given_orderNumber_21() {
+        //Given
+        int orderNumber = 21;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //When
+        String actual = fizzBuzz.countOff(orderNumber);
+
+        //Then
+        assertEquals("FizzWhizz", actual);
+    }
 }
 
