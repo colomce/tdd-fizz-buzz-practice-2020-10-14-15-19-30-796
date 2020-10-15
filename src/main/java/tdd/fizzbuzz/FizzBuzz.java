@@ -6,6 +6,7 @@ public class FizzBuzz {
     private static final String BUZZ = "Buzz";
     private static final String FIZZ_BUZZ = "FizzBuzz";
     private static final String FIZZ_WHIZZ = "FizzWhizz";
+    private static final String FIZZ_BUZZ_WHIZZ = "FizzBuzzWhizz";
     private static final int MODULO_3 = 3;
     private static final int MODULO_5 = 5;
     private static final int MODULO_7 = 7;
@@ -17,7 +18,7 @@ public class FizzBuzz {
         boolean multipleOfSeven = orderNumber % MODULO_7 == 0;
 
         if (multipleOfThree && multipleOfFive && multipleOfSeven) {
-            return "FizzBuzzWhizz";
+            return FIZZ_BUZZ_WHIZZ;
         }
 
         if (multipleOfThree && multipleOfFive) {
