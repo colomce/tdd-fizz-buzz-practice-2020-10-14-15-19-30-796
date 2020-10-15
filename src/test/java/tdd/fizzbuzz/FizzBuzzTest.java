@@ -20,7 +20,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_1_when_countOff_given_orderNumber_3() {
+    void should_return_Fizz_when_countOff_given_orderNumber_3() {
         //Given
         int orderNumber = 3;
         FizzBuzz fizzBuzz = new FizzBuzz();
